@@ -19,7 +19,7 @@ public class sqlConnection {
 	public static Connection dbConnector() {																																	//returns connection
 		try {
 			Class.forName("org.sqlite.JDBC");																																	//driver
-			Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\sethp\\eclipse-workspace\\PassManager\\src\\DB\\LoginDB.db");									//database location
+			Connection c = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\sethp\\eclipse-workspace\\PassManager\\src\\LoginDB.db");									//database location
 			return c;
 			
 		} catch (Exception e) {
